@@ -23,8 +23,7 @@ def main() -> None:
                     description=value["guild"]["description"]
                 )
             else:
-                guild = list(guild)
-                guild[0] = None
+                guild = [None]
 
             Player.objects.create(
                 nickname=key,
